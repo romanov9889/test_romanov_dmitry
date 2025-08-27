@@ -6,7 +6,7 @@
     <span>
       <slot name="icon" />
     </span>
-    <span class="navbar-button">
+    <span>
       <slot>Button</slot>
     </span>
   </button>
