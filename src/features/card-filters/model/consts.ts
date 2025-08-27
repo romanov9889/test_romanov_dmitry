@@ -3,9 +3,9 @@ import { CardDocumentFormat, ContractStatus } from "@/entities/card";
 export const CARD_DOCUMENT_TYPE = [
   {label: 'не выбрано', value: ''},
   {label: 'pdf', value: CardDocumentFormat.PDF},
-  {label: 'xlsx', value: CardDocumentFormat.DOC},
-  {label: 'xlsx', value: CardDocumentFormat.XLS},
-  {label: 'xlsx', value: CardDocumentFormat.JPG},
+  {label: 'doc', value: CardDocumentFormat.DOC},
+  {label: 'xls', value: CardDocumentFormat.XLS},
+  {label: 'jpg', value: CardDocumentFormat.JPG},
 ]
 
 export const CARD_STATUS_OPTIONS = [
