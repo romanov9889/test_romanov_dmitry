@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "0bb5382c-47f1-46c2-b1cf-2f6e17662b80",
+		"name": "Cards API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43829885",
+		"_collection_link": "https://dmitry-2555796.postman.co/workspace/Dmitry's-Workspace~be831183-a72b-406d-8fa4-671886be8ca4/collection/43829885-0bb5382c-47f1-46c2-b1cf-2f6e17662b80?action=share&source=collection_link&creator=43829885"
+	},
+	"item": [
+		{
+			"name": "get cards",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/documents",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"documents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get cards",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"documents"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date",
+							"domain": "",
+							"path": ""
+						}
+					],
+					"body": "[\n  {\n    \"id\": 1,\n    \"status\": \"active\",\n    \"documentType\": \"contract\",\n    \"documentName\": \"Договор\",\n    \"documentNumber\": \"001\",\n    \"startDate\": \"2025-01-01T00:00:00.000Z\",\n    \"endDate\": \"2025-12-31T00:00:00.000Z\",\n    \"notifyOnEnd\": false,\n    \"createTaskOnEnd\": false,\n    \"fileType\": \"application/pdf\"\n  },\n  {\n    \"id\": 2,\n    \"status\": \"ended\",\n    \"documentType\": \"contract\",\n    \"documentName\": \"Договор\",\n    \"documentNumber\": \"002\",\n    \"startDate\": \"2024-05-15T00:00:00.000Z\",\n    \"endDate\": \"2025-05-14T00:00:00.000Z\",\n    \"notifyOnEnd\": false,\n    \"createTaskOnEnd\": false,\n    \"fileType\": \"application/vnd.ms-excel\"\n  },\n  {\n    \"id\": 3,\n    \"status\": null,\n    \"documentType\": \"contract\",\n    \"documentName\": \"Справка\",\n    \"documentNumber\": null,\n    \"startDate\": null,\n    \"endDate\": \"2025-09-30T00:00:00.000Z\",\n    \"notifyOnEnd\": false,\n    \"createTaskOnEnd\": false,\n    \"fileType\": \"application/msword\"\n  },\n  {\n    \"id\": 4,\n    \"status\": null,\n    \"documentType\": \"contract\",\n    \"documentName\": \"Анкета\",\n    \"documentNumber\": null,\n    \"startDate\": \"2025-06-01T00:00:00.000Z\",\n    \"endDate\": null,\n    \"notifyOnEnd\": false,\n    \"createTaskOnEnd\": false,\n    \"fileType\": \"image/jpeg\"\n  }\n]\n"
+				}
+			]
+		},
+		{
+			"name": "create card",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/documents",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"documents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create card",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/documents",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"documents"
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": [],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{}"
+				}
+			]
+		}
+	]
+}

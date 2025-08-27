@@ -4,21 +4,21 @@
       label="Тип документа"
       :options="CARD_DOCUMENT_TYPE"
       :model-value="documentType"
-      @update:model-value="v => emit('update:documentType', v as CardDocumentFormat)"
+      @update:model-value="(v: CardDocumentFormat) => emit('update:documentType', v)"
     />
 
     <BaseSelect
       label="Статус"
       :options="CARD_STATUS_OPTIONS"
       :model-value="status"
-      @update:model-value="v => emit('update:status', v as ContractStatus)"
+      @update:model-value="(v: ContractStatus) => emit('update:status', v)"
     />
 
     <BaseSelect
       label="Сортировка"
       :options="CARD_SORT_OPTIONS"
       :model-value="sortBy"
-      @update:model-value="v => emit('update:sortBy', v as string)"
+      @update:model-value="(v: string) => emit('update:sortBy', v)"
     />
   </div>
 </template>
