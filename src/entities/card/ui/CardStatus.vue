@@ -7,7 +7,7 @@
 
 <script setup lang="ts">
   import { BaseStatus } from '@/shared/ui/BaseStatus';
-  import{ ContractStatus } from '../../model/types';
+  import{ ContractStatus } from '../model/types';
   import { computed } from 'vue';
 
   interface Props {

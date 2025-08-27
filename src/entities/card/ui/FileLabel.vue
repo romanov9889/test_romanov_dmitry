@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-  import { CardDocumentFormat } from '../../model/types';
+  import { CardDocumentFormat } from '../model/types';
   import xlsIcon from '@/shared/assets/icons/xls.svg';
   import pdfIcon from '@/shared/assets/icons/pdf.svg';
   import jpgIcon from '@/shared/assets/icons/jpg.svg';

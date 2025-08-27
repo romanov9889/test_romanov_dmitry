@@ -16,7 +16,7 @@
 
 
 <script setup lang="ts">
-  import{ CardDocumentFormat, ContractStatus } from '../../model/types';
+  import{ CardDocumentFormat, ContractStatus } from '../model/types';
   import { BaseCard } from '@/shared/ui/BaseCard';
   import CardStatus from './CardStatus.vue';
   import FileLabel from './FileLabel.vue';

@@ -10,7 +10,7 @@
 
 <script setup lang="ts">
   import { defineProps } from 'vue';
-  import type { ContractCard } from '../model/types';
+  import type { ContractCard } from './model/types';
 
   defineProps<{
     items: ContractCard[];
