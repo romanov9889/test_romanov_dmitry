@@ -1,0 +1,15 @@
+@import '_raw_colors.scss';
+
+:root {
+  --color-primary: #{$primary-blue};
+  --color-secondary: #{$secondary-blue};
+  --color-primary-text: #{$primary-dark};
+  --color-secondary-text: #{$dark-grey};
+  --color-main-background: #{$secondary-white};
+  --color-btn-primary-bg: #{$yellow-color};
+  --color-btn-secondary-bg: #{$light-grey};
+  --color-error: #{$error-color};
+  --color-success: #{$success-color};
+  --btn-color: #{$primary-white};
+  --color-header-bg: #{$primary-white};
+}
