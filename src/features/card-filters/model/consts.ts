@@ -1,4 +1,4 @@
-import { CardDocumentFormat, ContractStatus, DocumentType } from "@/entities/card";
+import { CardDocumentFormat, ContractStatus } from "@/entities/card";
 
 export const CARD_DOCUMENT_TYPE = [
   {label: 'не выбрано', value: ''},

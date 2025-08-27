@@ -1,5 +1,5 @@
 import { computed, reactive } from 'vue';
-import { CardDocumentFormat, DocumentType, type ContractCardType, type CreateCardForm } from '@/entities/card';
+import { CardDocumentFormat, DocumentType, type CreateCardForm } from '@/entities/card';
 
 
 interface FormState extends Omit<CreateCardForm, 'fileType'> {

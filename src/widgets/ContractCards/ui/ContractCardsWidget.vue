@@ -21,10 +21,10 @@
 <script setup lang="ts">
   import { onMounted } from 'vue'
   import { useCardsStore } from '@/entities/card'
-  import { CardFilters, useCardFilters } from '@/features/cards/card-filters'
+  import { CardFilters, useCardFilters } from '@/features/card-filters'
   import { storeToRefs } from 'pinia'
   import ContractsList from '@/entities/card/ui/ContractsList.vue'
-  import { CreateCardModal } from '@/features/cards/create-card'
+  import { CreateCardModal } from '@/features/create-card'
   import ContractCard from '@/entities/card/ui/ContractCard.vue'
 
   const cardsStore = useCardsStore()
