@@ -10,22 +10,22 @@
     </div>
 
     <div v-if="loading">...Loading</div>
-    <TodoList v-else :items="filteredCards">
+    <ContractsList v-else :items="filteredCards">
       <template #default="{ card }">      
         <ContractCard :card="card" />
       </template>     
-    </TodoList>
+    </ContractsList>
   </div>
 </template>
 
 <script setup lang="ts">
   import { onMounted } from 'vue'
-  import TodoList from '@/entities/card/ContractsList.vue'
   import { useCardsStore } from '@/entities/card'
-  import { CardFilters, useCardFilters } from '@/features/cards'
+  import { CardFilters, useCardFilters } from '@/features/cards/card-filters'
   import { storeToRefs } from 'pinia'
-  import ContractCard from '@/entities/card/ContractCard.vue'
-  import CreateCardModal from '@/features/cards/create-card/CreateCardModal.vue'
+  import ContractsList from '@/entities/card/ui/ContractsList.vue'
+  import { CreateCardModal } from '@/features/cards/create-card'
+  import ContractCard from '@/entities/card/ui/ContractCard.vue'
 
   const cardsStore = useCardsStore()
 

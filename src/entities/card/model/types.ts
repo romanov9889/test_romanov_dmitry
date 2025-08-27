@@ -16,7 +16,7 @@ export enum CardDocumentFormat {
   DOC = 'application/msword'
 }
 
-export interface ContractCard {
+export interface ContractCardType {
   id: number
   status: ContractStatus | null
   documentType: DocumentType;
@@ -29,4 +29,4 @@ export interface ContractCard {
   fileType: CardDocumentFormat | null;
 }
 
-export type CreateCardForm = Omit<ContractCard, 'id' | 'status'>
+export type CreateCardForm = Omit<ContractCardType, 'id' | 'status'>

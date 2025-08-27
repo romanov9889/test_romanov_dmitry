@@ -6,7 +6,7 @@
 </template>
 
 <script setup lang="ts">
-  import HeaderWrapper from './ui/HeaderWrapper.vue';
+  import HeaderWrapper from './HeaderWrapper.vue';
 
 </script>
 

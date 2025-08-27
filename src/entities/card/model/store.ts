@@ -1,10 +1,10 @@
 import { defineStore } from 'pinia'
-import type { ContractCard, CreateCardForm } from './types'
+import type { ContractCardType, CreateCardForm } from './types'
 import { getCards, createCard } from '../api/cardApi'
 
 export const useCardsStore = defineStore('cards', {
   state: () => ({
-    cards: [] as ContractCard[],
+    cards: [] as ContractCardType[],
     loading: false,
     error: null as string | null
   }),

@@ -4,21 +4,21 @@
       label="Тип документа"
       :options="CARD_DOCUMENT_TYPE"
       :model-value="documentType"
-      @update:model-value="(v: CardDocumentFormat) => emit('update:documentType', v)"
+      @update:model-value="(v) => emit('update:documentType', v as CardDocumentFormat)"
     />
 
     <BaseSelect
       label="Статус"
       :options="CARD_STATUS_OPTIONS"
       :model-value="status"
-      @update:model-value="(v: ContractStatus) => emit('update:status', v)"
+      @update:model-value="(v) => emit('update:status', v as ContractStatus)"
     />
 
     <BaseSelect
       label="Сортировка"
       :options="CARD_SORT_OPTIONS"
       :model-value="sortBy"
-      @update:model-value="(v: string) => emit('update:sortBy', v)"
+      @update:model-value="(v) => emit('update:sortBy', v as string)"
     />
   </div>
 </template>
@@ -27,7 +27,7 @@
   import { defineProps, defineEmits } from 'vue'
   import { BaseSelect } from '@/shared/ui/BaseSelect'
   import type { CardDocumentFormat, ContractStatus } from '@/entities/card'
-  import { CARD_DOCUMENT_TYPE, CARD_STATUS_OPTIONS, CARD_SORT_OPTIONS } from '../consts'
+  import { CARD_DOCUMENT_TYPE, CARD_STATUS_OPTIONS, CARD_SORT_OPTIONS } from '../model/consts'
 
   interface Props {
     documentType: CardDocumentFormat | string

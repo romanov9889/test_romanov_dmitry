@@ -17,8 +17,8 @@
 
 <script setup lang="ts">
   import { sidebarItems } from '@/shared/сonfig/sidebar';
-  import NavbarButton from './ui/NavbarButton.vue';
-  import NavbarWrapper from './ui/NavbarWrapper.vue';
+  import NavbarButton from './NavbarButton.vue';
+  import NavbarWrapper from './NavbarWrapper.vue';
 </script>
 
 <style scoped lang="scss"></style>

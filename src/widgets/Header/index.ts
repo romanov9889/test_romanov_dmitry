@@ -1,3 +1,3 @@
-import Header from "./MainHeader.vue";
+import Header from "./ui/MainHeader.vue";
 
 export {Header}

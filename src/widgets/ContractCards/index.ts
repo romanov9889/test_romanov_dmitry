@@ -1,3 +1,3 @@
-import CardsWidget from "./ContractCardsWidget.vue";
+import CardsWidget from "./ui/ContractCardsWidget.vue";
 
 export { CardsWidget }

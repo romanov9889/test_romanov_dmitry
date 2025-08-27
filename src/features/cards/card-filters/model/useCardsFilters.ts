@@ -1,22 +1,22 @@
 import { ref, computed, type Ref } from 'vue'
-import type { ContractCard, CardDocumentFormat, ContractStatus } from '@/entities/card'
+import type { CardDocumentFormat, ContractCardType, ContractStatus } from '@/entities/card'
 
-export function useCardFilters(cards: Ref<ContractCard[]>) {
+export function useCardFilters(cards: Ref<ContractCardType[]>) {
   const documentType = ref<CardDocumentFormat | ''>('')
   const status = ref<ContractStatus | ''>('')
   const sortBy = ref<'name' | 'startDate' | ''>('')
 
-  const filterByDocumentType = (card: ContractCard) => {
+  const filterByDocumentType = (card: ContractCardType) => {
     if (!documentType.value) return true
     return card.fileType === documentType.value
   }
 
-  const filterByStatus = (card: ContractCard) => {
+  const filterByStatus = (card: ContractCardType) => {
     if (!status.value) return true
     return card.status === status.value
   }
 
-  const sortCards = (a: ContractCard, b: ContractCard) => {
+  const sortCards = (a: ContractCardType, b: ContractCardType) => {
     if (sortBy.value === 'name') {
       return a.documentName.localeCompare(b.documentName)
     }

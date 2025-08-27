@@ -17,16 +17,16 @@
 
 <script setup lang="ts">
   import { BaseIconButton } from '@/shared/ui/BaseIconButton';
-  import { type ContractCard } from './model/types';
-  import CardWrapper from './ui/CardWrapper.vue';
+  import { type ContractCardType } from '../model/types';
   import printer from '@/shared/assets/icons/printer.svg';
   import edit from '@/shared/assets/icons/edit.svg';
   import bin from '@/shared/assets/icons/bin.svg';
   import { formatDate } from '@/shared/date';
   import { computed } from 'vue';
+  import CardWrapper from './CardWrapper.vue';
 
   interface Props {
-    card: ContractCard;
+    card: ContractCardType;
   }
 
   const props = defineProps<Props>()

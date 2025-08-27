@@ -1,3 +1,3 @@
-import UserProfileWidget from "./UserProfileWidget.vue";
+import UserProfileWidget from "./ui/UserProfileWidget.vue";
 
 export {UserProfileWidget}

@@ -69,9 +69,9 @@
   import BaseFilesInput from '@/shared/ui/BaseFilesInput/BaseFilesInput.vue';
   import { BaseRadioGroup } from '@/shared/ui/BaseRadioGroup';
   import { BaseTextInput } from '@/shared/ui/BaseTextInput';
-  import { useCardForm } from '../useCardsForm';
-  import { DOCUMENT_TYPES } from '../consts';
-
+  import { useCardForm } from '../model/useCardsForm';
+  import { DOCUMENT_TYPES } from '../model/consts';
+  
   const cardsStore = useCardsStore()
   const { form, submit, isSubmitDisabled } = useCardForm()
 

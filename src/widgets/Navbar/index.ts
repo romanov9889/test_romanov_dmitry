@@ -1,3 +1,3 @@
-import Navbar from "./MainNavbar.vue";
+import Navbar from "./ui/MainNavbar.vue";
 
 export { Navbar }

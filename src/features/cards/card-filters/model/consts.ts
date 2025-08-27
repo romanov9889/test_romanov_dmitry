@@ -20,10 +20,4 @@ export const CARD_SORT_OPTIONS = [
   {label: 'По имени', value: 'name'}
 ]
 
-export const DOCUMENT_TYPES = [
-  { label: 'Договор', value: DocumentType.Contract },
-  { label: 'Справка', value: DocumentType.Certificate },
-  { label: 'Другое', value: DocumentType.Other },
-];
-
 export type SortBy = typeof CARD_SORT_OPTIONS;
