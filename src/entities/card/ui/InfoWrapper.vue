@@ -1,9 +1,9 @@
 <template>
   <div class="info">
     <div class="card-info">
-      <div class="header"><slot name="title"></slot></div>          
+      <h4 class="header"><slot name="title"></slot></h4>          
         <slot name="status"></slot>
-        <div class="date"><slot name="date"></slot></div>
+        <span class="date"><slot name="date"></slot></span>
     </div>      
     <div class="actions"><slot name="actions"></slot></div>
   </div>
